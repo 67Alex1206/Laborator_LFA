@@ -1,0 +1,44 @@
+[Sigma] #0^n1^n
+0,1
+[End]
+
+[Gamma] #alfabet stiva
+$,$0,0
+[End]
+
+#[InitStack] -optional
+#$
+#[End]
+
+
+[States]
+*q0
+qi
+q1
+q2
+*qt
+
+[End]
+
+[Delta]
+q0,0,epsilon,qi,$0
+q0,1,epsilon,q2,epsilon
+qi,0,epsilon,qi,0
+qi,1,0,q1,epsilon
+qi,1,$0,qt,epsilon
+
+
+
+q1,1,0,q1,epsilon
+q1,0,epsilon,q2,epsilon
+q1,1,$0,qt,epsilon
+
+qt,1,$,q2,epsilon
+qt,0,epsilon,q2,epsilon
+
+q2,0,epsilon,q2,epsilon
+q2,1,epsilon,q2,epsilon
+
+
+[End]
+

@@ -1,0 +1,23 @@
+[Sigma] #genereaza operatiile aritmetice
++,-,*,/,0,1,2,3,4,5,6,7,8,9
+[End]
+
+[Var]
+N,O,Z,D,S,!P
+[End]
+
+
+
+[Sub]
+N->0|1|2|3|4|5|6|7|8|9
+Z->1|2|3|4|5|6|7|8|9
+O->+|-|*
+D->/
+
+P->S|NOP|NON|NDS
+
+S->ZOP|ZDS|Z
+
+[End]
+
+
